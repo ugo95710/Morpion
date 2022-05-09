@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="morpion_css.css">
+	<title>Morpion</title>
+	<script src="morpion_java.js"></script>
+</head>
+<body>
+	<img class="img" src="fond.jpg" id="fond">
+	<img class="img" src="rond.png" id="rond">
+	<img class="img" src="croix.png" id="croix">
+
+	<div id="d1">
+	<table id="morpion" border="1">
+		<tr>
+			<td  class="case">
+				<img  src="fond.jpg" onclick="affiche(this,0,0)" >
+			</td>
+			<td  class="case">
+				<img  src="fond.jpg" onclick="affiche(this,0,1)" >
+			</td>
+			<td>
+				<img  src="fond.jpg" onclick="affiche(this,0,2)" >
+			</td  class="case">
+		</tr>
+		<tr>
+			<td  class="case">
+				<img  src="fond.jpg" onclick="affiche(this,1,0)" >
+			</td>
+			<td  class="case">
+				<img  src="fond.jpg" onclick="affiche(this,1,1)" >
+			</td>
+			<td  class="case">
+				<img  src="fond.jpg" onclick="affiche(this,1,2)" >
+			</td>
+		</tr>
+		<tr>
+			<td  class="case">
+				<img id="i7" src="fond.jpg" onclick="affiche(this,2,0)" >
+			</td>
+			<td  class="case">
+				<img src="fond.jpg" onclick="affiche(this,2,1)" >
+			</td>
+			<td  class="case">
+				<img src="fond.jpg" onclick="affiche(this,2,2)" >
+			</td>
+		</tr>
+		<button onclick="window.location.reload(false)"> reset </button>
+		
+	</table>
+	</div>
+	
+</body>
+</html>
